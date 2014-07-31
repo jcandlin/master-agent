@@ -23,7 +23,7 @@ Vagrant.configure('2') do |config|
     # An index of pre-built boxes can be found at:
     #
     #   https://vagrantcloud.com/puppetlabs
-    node.vm.box = 'puppetlabs/centos-6.5-64-nocm'
+    node.vm.box = 'precise64'
  
     node.vm.hostname = 'puppetmaster.puppetdebug.vlan'
  
@@ -61,7 +61,7 @@ Vagrant.configure('2') do |config|
   end
  
   config.vm.define :puppetagent do |node|
-    node.vm.box = 'puppetlabs/centos-6.5-64-nocm'
+    node.vm.box = 'precise64'
  
     node.vm.hostname = 'puppetagent.puppetdebug.vlan'
  
